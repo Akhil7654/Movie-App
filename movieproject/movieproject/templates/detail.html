@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block body %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Year</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{res2.name}}</td>
+      <td>{{res2.gen}}</td>
+      <td>{{res2.year}}</td>
+      <td>{{res2.des}}</td>
+    </tr>
+<!--    <tr>-->
+<!--      <th scope="row">2</th>-->
+<!--      <td>Jacob</td>-->
+<!--      <td>Thornton</td>-->
+<!--      <td>@fat</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <th scope="row">3</th>-->
+<!--      <td colspan="2">Larry the Bird</td>-->
+<!--      <td>@twitter</td>-->
+<!--    </tr>-->
+  </tbody>
+</table>
+
+<a class="btn btn-dark" href="{% url 'movieapp:update_movie' res2.id %}">Update</a>
+<a class="btn btn-dark" href="{% url 'movieapp:delete_movie' res2.id %}">Delete</a>
+
+{% endblock %}
+

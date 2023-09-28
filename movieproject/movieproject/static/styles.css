@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+.table {
+   color:white;
+}
+
+.btn-light {
+    position: absolute;
+    top: 60px;
+    right: 12px;
+}
